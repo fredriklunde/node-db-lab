@@ -1,11 +1,4 @@
-const mysql = require('mysql2');
-// create a new MySQL connection
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'test_db'
-});
+const { connection } = require('./connection.js')
 
 // Connect to the MySQL server
 connection.connect((err) => {
